@@ -33,9 +33,13 @@ custLogo.forEach((el) => {
 });
 
 
-document.querySelectorAll('form')
-    .forEach(el => el.addEventListener('click',
-        (event) => event.preventDefault()));
+// document.querySelectorAll('form')
+//     .forEach(el => el.addEventListener('click',
+//         (event) => event.preventDefault()));
+
+document.querySelector('.illustration__form')
+    .addEventListener('click',
+        (event) => event.preventDefault());
 
 
 // document.querySelector('.get-started__links')
