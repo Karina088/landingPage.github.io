@@ -5,7 +5,7 @@ https://karina088.github.io/landingPage.github.io/
 
 Стек: 
 ◾ HTML5
-◾ CSS
+◾ CSS3
 ◾ JS 
 
 Сайт прошел валидацию в W3C, 
