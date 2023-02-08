@@ -75,17 +75,20 @@ function detectInputType(event) {
     }
 }
 
+
 // link for block fearures__transition
 const featuresLinkLeftEl = document.querySelector('.features__left');
 const featuresLinkEl = document.querySelector('.features__link');
-
-featuresLinkLeftEl.addEventListener('touchmove', () => {
+document.addEventListener('touchmove', addLeftActive, addLinkActive);
+// featuresLinkLeftEl.addEventListener('touchmove', addLeftActive)
+function addLeftActive() {
     featuresLinkLeftEl.classList.toggle('features__left-active');
-})
-featuresLinkEl.addEventListener('touchmove', () => {
-    featuresLinkEl.classList.toggle('features__link-active');
-})
+}
 
+// featuresLinkEl.addEventListener('touchmove', addLinkActive,)
+function addLinkActive() {
+    featuresLinkEl.classList.toggle('features__link-active');
+}
 
 // прокрутка по ссылкам
 function scrollTo(element) {
@@ -105,6 +108,7 @@ const getStartedEl = document.querySelector('.get-started');
 link.addEventListener('pointerover', () => {
     scrollTo(featuresClass);
 });
+
 linkBlog.addEventListener('pointerover', () => {
     scrollTo(blogEl);
 });
@@ -113,6 +117,6 @@ linkPricing.addEventListener('pointerover', () => {
 });
 
 // проверяла на соотвествие размеров с макетом
-const swiperel = document.querySelector('.illustration');
-console.log(swiperel.offsetHeight);
-console.log(swiperel.offsetWidth);
+// const swiperel = document.querySelector('.illustration');
+// console.log(swiperel.offsetHeight);
+// console.log(swiperel.offsetWidth);
