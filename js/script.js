@@ -77,18 +77,29 @@ function detectInputType(event) {
 
 
 // link for block fearures__transition
+const featuresTransition = document.querySelector('.features__transition');
 const featuresLinkLeftEl = document.querySelector('.features__left');
 const featuresLinkEl = document.querySelector('.features__link');
+
 document.addEventListener('touchmove', addLeftActive, addLinkActive);
-// featuresLinkLeftEl.addEventListener('touchmove', addLeftActive)
+
 function addLeftActive() {
-    featuresLinkLeftEl.classList.toggle('features__left-active');
+    featuresTransition.addEventListener('click', () => {
+        featuresLinkLeftEl.classList.toggle('features__left-active')
+    })
 }
 
-// featuresLinkEl.addEventListener('touchmove', addLinkActive,)
 function addLinkActive() {
     featuresLinkEl.classList.toggle('features__link-active');
 }
+
+
+const link = document.querySelector('.link-features');
+const featuresClass = document.querySelector('.features');
+const linkBlog = document.querySelector('.link-blog');
+const blogEl = document.querySelector('.blog');
+const linkPricing = document.querySelector('.link-get-started');
+const getStartedEl = document.querySelector('.get-started');
 
 // прокрутка по ссылкам
 function scrollTo(element) {
@@ -98,12 +109,6 @@ function scrollTo(element) {
         behavior: 'smooth',
     })
 }
-const link = document.querySelector('.link-features');
-const featuresClass = document.querySelector('.features');
-const linkBlog = document.querySelector('.link-blog');
-const blogEl = document.querySelector('.blog');
-const linkPricing = document.querySelector('.link-get-started');
-const getStartedEl = document.querySelector('.get-started');
 
 link.addEventListener('pointerover', () => {
     scrollTo(featuresClass);
