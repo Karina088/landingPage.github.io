@@ -4,9 +4,9 @@
 https://karina088.github.io/landingPage.github.io/
 
 Стек: 
-◾ HTML5
-◾ CSS3
-◾ JS 
+- HTML5
+- CSS3
+- JS 
 
 Сайт прошел валидацию в W3C, 
 использую семантику и анимацию,
