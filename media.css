@@ -731,6 +731,7 @@
     }
 
     .content__btn {
+        position: static;
         /* top: 44%; */
         width: 36px;
         height: 36px;

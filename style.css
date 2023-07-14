@@ -187,8 +187,8 @@ header {
 }
 
 .content__btn {
-    position: absolute;
-    top: 55%;
+    position: absolute; 
+     top: 55%;
     border: none;
     width: 52px;
     height: 52px;
