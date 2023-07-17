@@ -187,6 +187,7 @@ header {
 }
 
 .content__btn {
+    display: none;
     position: absolute; 
      top: 55%;
     border: none;

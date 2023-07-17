@@ -5,6 +5,14 @@
 * Browsers: last 4 version
 */
 
+
+
+@media (max-width: 1720px) {
+    .content__btn {
+        display: block;
+    }
+}
+
 @media (max-width: 1440px) {
     .content__btn {
         top: 46%;
